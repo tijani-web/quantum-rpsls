@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Rumble: RPSLS Edition</title>
+    <link rel="icon" href="/rock-paper-scissors-master/images/icon-paper.svg" type="" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="container">
+        <div class="header-score">
+            <div class="game-name">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+                <h1>LIZARD</h1>
+                <h1>SPOCK</h1>
+            </div>
+            <div class="game-score">
+                <p>SCORE</p>
+                <div id="score">0</div>
+            </div>
+        </div>
+        <section class="rule-details" id="ruleDetails">
+            <div class="rule-heading">
+                <h1>RULES</h1>
+                <div class="close" onclick="closeRule()">
+                    <img src="rock-paper-scissors-master/images/icon-close.svg" alt="">
+                </div>
+            </div>
+            <div class="rule-img">
+                <img src="rock-paper-scissors-master/images/image-rules-bonus.svg" alt="">
+            </div>
+
+        </section>
+        <section class="game-board" id="game-board">
+            <div class="game-shape">
+                <img src="rock-paper-scissors-master/images/bg-pentagon.svg" alt="">
+            </div>
+
+            <div class="choice rock" onclick="handlechoice('rock')">
+                <img src="rock-paper-scissors-master/images/icon-rock.svg" alt="">
+            </div>
+            <div class="choice paper" onclick="handlechoice('paper')">
+                <img src="rock-paper-scissors-master/images/icon-paper.svg" alt="">
+            </div>
+            <div class="choice scissors" onclick="handlechoice('scissors')">
+                <img src="rock-paper-scissors-master/images/icon-scissors.svg" alt="">
+            </div>
+            <div class="choice lizard" onclick="handlechoice('lizard')">
+                <img src="rock-paper-scissors-master/images/icon-lizard.svg" alt="">
+            </div>
+            <div class="choice spock" onclick="handlechoice('spock')">
+                <img src="rock-paper-scissors-master/images/icon-spock.svg" alt="">
+            </div>
+        </section>
+
+        <div id="result-screen">
+            <div class="picked user-picked">
+              <h3>You Picked</h3>
+              <div id="user-choice" class="result-choice"></div>
+            </div>
+            <div class="main-result">
+                <h1 id="final-result"></h1>
+                <p id="playAgain" onclick="playAgain()">PLAY AGAIN</p>
+            </div>
+            <div class="picked house-picked">
+              <h3>The House Picked</h3>
+              <div id="house-choice" class="result-choice"></div>
+            </div>
+       </div>
+
+     </section>
+    <div class="button-rule">
+        <button class="rule" id="rule" onclick="rule()">RULES</button>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
