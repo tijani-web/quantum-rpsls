@@ -319,6 +319,12 @@ body{
   animation: pulse 1.5s infinite ease-in-out;
   border-radius: 50%;
 }
+button,
+.rule,
+#playAgain {
+  font-size: 16px !important;
+}
+
 
 @keyframes pulse {
   0% {
