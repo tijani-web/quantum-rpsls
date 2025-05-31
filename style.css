@@ -341,7 +341,14 @@ body{
     .game-name h1{
         font-size: 14px;
     }
-    
+    .game-score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    border-radius: 7px;
+}
     .result-choice{
         width: 100px;
         height: 100px;
@@ -393,6 +400,14 @@ body{
 }
 
 @media (max-width:378px) {
+     .game-score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1.2rem 1.2rem;
+    border-radius: 7px;
+}
      .result-choice{
         width: 80px;
         height: 80px;
