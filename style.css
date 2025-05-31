@@ -348,6 +348,15 @@ body{
     background-color: white;
     padding: 1.5rem 1.5rem;
     border-radius: 7px;
+    
+   }
+   .header-score{
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid  hsl(217, 16%, 45%);
 }
     .result-choice{
         width: 100px;
